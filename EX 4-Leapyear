@@ -1,0 +1,15 @@
+// the class type be LeapYear
+public class LeapYear {
+    //name the parameter as year
+    public static boolean isLeapYear(int year) {
+        //if year is >=1 || <== 9999
+        if (year < 1 || year > 9999) {
+            //in rage true not in range false
+            return false;
+
+        }
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+    }
+        
+
+}
