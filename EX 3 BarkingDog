@@ -1,0 +1,14 @@
+//let the class be barking dog
+public class BarkingDog {
+    //give method as shouldWakeUp
+    //with 2 parameters boolean and int hourOfTheDay
+    public static boolean shouldWakeUp(boolean barking, int hourOfTheDay) {
+    //if houroftheday <0 or >23 it will return false
+        if (!barking) {
+            return false;
+            
+        }
+        return hourOfTheDay > -1 && hourOfTheDay < 8
+                || hourOfTheDay == 23;
+    }
+}
