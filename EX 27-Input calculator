@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+ 
+public class InputCalculator {
+    public static void inputThenPrintSumAndAverage(){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        
+        for(;;){
+            if(sc.hasNextInt()){
+                int tmp = sc.nextInt();
+                arr.add(tmp);
+            }
+            else break;
+        }
+        
+        int sum = 0;
+        for(int j = 0; j<arr.size();j++){
+            sum+=arr.get(j);
+            
+        }
+        
+        double avt = (double) sum/arr.size();
+        int avg = (int) Math.round(avt);
+        System.out.println("SUM = "+sum+" AVG = "+avg);
+    }
+}
